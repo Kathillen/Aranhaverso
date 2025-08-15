@@ -31,7 +31,7 @@ node index.js
 
 ## Clone o repositório:
 
-git clone https://github.com/Kathillen/to-do-list
+git clone https://github.com/Kathillen/Aranhaverso
 
 ---
 
