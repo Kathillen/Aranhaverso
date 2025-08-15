@@ -1,0 +1,14 @@
+{
+  "name": "gamelogin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "type": "module",
+  "start": "node index.js",
+  "description": "",
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "chalk": "^5.5.0",
+    "clark": "^0.0.6"
+  }
+}
