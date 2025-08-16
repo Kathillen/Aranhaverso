@@ -20,10 +20,12 @@ export async function existUser(){
         if( userManeger.users.has(username)){ // verificando se já existe um usuário com esse nome
             intro(`${chalk.blue.bold(`🕷️ Olá, ${username}, você realmente é um aracnídeo!`)}`);
             console.log("Você já pode aproveitar o aranhaverso!")
-        } else (!userManeger.users.has(username)); {
-        log.error("Você ainda não é um aracnídeo, tente novamente!")
-    }
+        } else {
+            console.log("Ops, parece que você não está cadastrado no aranhaverso. Tente novamente!");
+        }
     } while(!userManeger.users.has(username)); 
+        
+    
         
     
     if(isCancel(username)){ 

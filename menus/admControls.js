@@ -2,7 +2,8 @@ import {isCancel, outro, log, select, text, intro, stream} from "@clack/prompts"
 import { userManeger } from "../usersControl/users.js";
 import { createUsers } from "./createUsers.js";
 import { listUsersMenu } from "./listUsers.js";
-
+import { mainMenu } from "./menu.js";
+import chalk from "chalk"
 
 export async function admMenu(){
     console.log;
@@ -14,7 +15,6 @@ export async function admMenu(){
         options: [
         {value: 'createUser', label: 'Criar novo usuário'},
         {value: 'listUser', label: 'Listar usuários'},
-        {value: 'deleteUser', label: 'Deletar usuário'},
         {value: 'exit', label: 'Sair'}
         ]
     });
@@ -27,6 +27,11 @@ export async function admMenu(){
         case "listUser":{
             intro("🕷️ Você escolheu ver a lista de usuários! 🕸️");
             listUsersMenu();
+            return;
+        }
+        case "exit":{
+            outro(chalk.bgRed.rgb(0, 0, 0).bold("🕷️  Você está saindo do painel de controle!🕸️"))
+            mainMenu();
             return;
         }
     }
