@@ -41,8 +41,8 @@ export async function createUsers(){
         position = await select({
             message: "Qual será a posição no Aranhaverso?",
             options: [
-                {value: "Aracnídeo", label: "Aracnídeo"},
-                {value: "Peter Supremo", label: "Peter Supremo"}
+                {value: "Aracnídeo", label: "Aracnídeo - Membro comum do Aranhaverso"},
+                {value: "Peter Supremo", label: "Peter Supremo - Membro com poderes avançados"},
             ]
         })
 
