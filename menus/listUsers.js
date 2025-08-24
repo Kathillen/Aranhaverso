@@ -1,6 +1,6 @@
 // Listar os usuários
 
-import {log, select, isCancel} from "@clack/prompts"
+import {log, select, isCancel, password} from "@clack/prompts"
 import chalk from "chalk"; // importando o chalk para poder formatar o texto
 
 
@@ -21,8 +21,8 @@ export async function listUsersMenu(){
     const selected  = await select ({
         message: "Selecione um aranha",
         options: [
-                ...userManeger.toArray().map(({username , status}) => ({ 
-                    label: `${userManeger.colorStatus(status)} ${chalk.white.underline(username)}`,
+                ...userManeger.toArray().map(({position, username, status, password}) => ({ 
+                    label: `${userManeger.colorStatus(status)} ${chalk.white.underline(username)} ${chalk.gray(position)}`, // exibindo o username e a posição do usuário
                     value: username
                     })),// Para fazer um espalhamento de um array, usando o metodo to array e depois vai mapear todos os items para um novo obj
 

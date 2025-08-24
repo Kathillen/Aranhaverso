@@ -13,7 +13,9 @@ export async function updateUsersMenu(username){
     const status = userManeger.colorStatus(user.status);
 
     log.info([
+        `Cargo: ${chalk.bgRed.white.bold(user.position)}`,
         `Usuário: ${user.username}`,
+        `Senha: ${chalk.bgGreen.white.bold(user.password)}`,
         `Status: ${status}`,
         `Criada em: ${chalk.bgBlue(formatedDate)}`
     ].join("\n")) // join para exibir os intens do array com uma quebra de linha

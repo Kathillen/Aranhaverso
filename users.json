@@ -1,17 +1,30 @@
 [
   {
-    "username": "RafaAmor",
-    "status": "Usuário ativo",
-    "createdAt": "2025-08-15T00:18:01.852Z"
-  },
-  {
+    "position": "Spidey Supremo",
     "username": "KaenPP",
     "status": "Usuário ativo",
+    "password": "27022023",
     "createdAt": "2025-08-15T00:28:22.434Z"
   },
   {
-    "username": "KaenTeste",
+    "position": "Peter Supremo",
+    "username": "KathhillenTeste",
+    "password": "KaenRafa",
     "status": "Usuário ativo",
-    "createdAt": "2025-08-16T01:28:18.591Z"
+    "createdAt": "2025-08-23T00:17:01.089Z"
+  },
+  {
+    "position": "Aracnídeo",
+    "username": "Rafa",
+    "password": "Amor..",
+    "status": "Usuário ativo",
+    "createdAt": "2025-08-24T01:42:54.625Z"
+  },
+  {
+    "position": "Aracnídeo",
+    "username": "RafaAmor",
+    "password": "RafaLinda",
+    "status": "Usuário ativo",
+    "createdAt": "2025-08-24T01:52:13.114Z"
   }
 ]

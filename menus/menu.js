@@ -19,8 +19,7 @@ export async function mainMenu(){
 
     switch (option){
         case "adm":{
-            console.log(`${chalk.red.bold("Então você é um  Peter Supremo, o guardião do aranhaverso!")}`)
-            console.log(`${chalk.blue.bold("🕷️  Seja bem-vindo(a) ao painel de controle do aranhaverso!🕸️")}`)
+            console.log(`${chalk.red.bold("Então você é um guardião do aranhaverso!")}`)
             console.log;
             admMenu()
             return;
